@@ -1,0 +1,19 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+#grid-container{
+    display: flex;
+    flex: 0 0 auto;
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+button{
+    font-size: 25px;
+}
