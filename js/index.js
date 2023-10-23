@@ -1,5 +1,6 @@
+let gridContainer = document.querySelector("#grid-container")
+
 function createGrid(size) {
-    let gridContainer = document.querySelector("#grid-container")
     let gridSize = (600 / size)
     for (let row = 0; row < size; row++) {
 
@@ -16,7 +17,7 @@ function createGrid(size) {
 }
 
 function clearGrid() {
-    document.querySelectorAll("#grid-container > div").forEach(element => {
+    gridContainer.querySelectorAll("div").forEach(element => {
         element.remove()
     });
 }
