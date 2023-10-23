@@ -1,6 +1,7 @@
 let gridContainer = document.querySelector("#grid-container")
 
 function createGrid(size) {
+    // dividing size by 600 because #grid-container size is 600x600 pixels using css
     let gridSize = (600 / size)
     for (let row = 0; row < size; row++) {
 
