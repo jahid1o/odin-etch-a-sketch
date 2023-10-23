@@ -15,6 +15,11 @@
     flex-wrap: wrap;
 }
 
+.grid-child-border > div{
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
 button{
     font-size: 25px;
 }

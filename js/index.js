@@ -35,3 +35,13 @@ resizeBtn.addEventListener("click", () => {
     clearGrid()
     createGrid(userInput)
 })
+
+const borderCheckbox = document.querySelector("#border-checkbox")
+
+borderCheckbox.addEventListener("click", () => {
+    if (borderCheckbox.checked) {
+        gridContainer.classList.add("grid-child-border")
+    } else if (!borderCheckbox.checked) {
+        gridContainer.classList.remove("grid-child-border")
+    }
+})
