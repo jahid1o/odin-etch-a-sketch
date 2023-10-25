@@ -1,5 +1,9 @@
 let gridContainer = document.querySelector("#grid-container")
 
+function colorGrid(grid) {
+    grid.style.cssText += "background-color: rgb(128, 128, 128);"
+}
+
 function createGrid(size) {
     // dividing size by 600 because #grid-container size is 600x600 pixels using css
     let gridSize = (600 / size)
@@ -10,7 +14,7 @@ function createGrid(size) {
             columnGrid.style.cssText = `width: ${gridSize}; height: ${gridSize};`
 
             columnGrid.addEventListener("mouseover", () => {
-                columnGrid.style.cssText += "background-color: grey;"
+                colorGrid(columnGrid)
             })
             gridContainer.appendChild(columnGrid)
         }
