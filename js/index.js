@@ -1,7 +1,16 @@
 let gridContainer = document.querySelector("#grid-container")
 
+function randomRGB() {
+    return Math.floor(Math.random() * (255 - 1 + 1) ) + 1;
+}
+
 function colorGrid(grid) {
-    grid.style.cssText += "background-color: rgb(128, 128, 128);"
+    let rgb = "rgb(128, 128, 128)"
+    let randomColorsCheckbox = document.querySelector("#random-colors-checkbox")
+    if (randomColorsCheckbox.checked) {
+        rgb = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`
+    }
+    grid.style.cssText += `background-color: ${rgb};`
 }
 
 function createGrid(size) {
